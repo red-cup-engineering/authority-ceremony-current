@@ -1,4 +1,4 @@
-# Koios authority ceremony (current)
+# Koios news authority ceremony engine
 
 <!-- 561-group-standards:badges:start -->
 [![Causeway Services](https://img.shields.io/badge/561%20Group-Causeway%20Services-115e69)](https://github.com/causeway-services)
@@ -40,7 +40,7 @@ an independent editor; do not check its output into the repository.
 
 ```sh
 draft="$PWD/sites/koios.news/content/posts/reporting-source-1-for-living-memorial-palestinian-activist-alex.md"
-node tools/authority-ceremony-current/bin/koios-news-authority-ceremony.mjs first-post-handoff \
+node apps/koios-news-authority-ceremony-engine/bin/koios-news-authority-ceremony.mjs first-post-handoff \
   --draft "$draft" \
   --slug reporting-source-1-for-living-memorial-palestinian-activist-alex \
   --out /secure/koios-authority/alex-first-post-handoff.json
@@ -52,7 +52,7 @@ ordinary `editorial-template`, `attach`, and `verify-editorial` sequence below
 remains the only route to a signed editorial grant.
 
 ```sh
-tool=tools/authority-ceremony-current/bin/koios-news-authority-ceremony.mjs
+tool=apps/koios-news-authority-ceremony-engine/bin/koios-news-authority-ceremony.mjs
 
 # This writes no signature and no private material.
 node "$tool" editorial-template \
@@ -113,7 +113,7 @@ anything, or execute a rollback. It verifies both the input binding and the
 new output through `cloudflare-release-current`'s fixed-target contracts.
 
 ```sh
-node tools/authority-ceremony-current/bin/koios-news-authority-ceremony.mjs rollback-binding \
+node apps/koios-news-authority-ceremony-engine/bin/koios-news-authority-ceremony.mjs rollback-binding \
   --binding /secure/koios/koios-news-primary-binding.json \
   --prior-version-id "$OBSERVED_PRIOR_VERSION_ID" \
   --out /secure/koios/koios-news-rollback-binding.json

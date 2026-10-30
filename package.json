@@ -1,5 +1,5 @@
 {
-  "name": "@causeway-services/authority-ceremony-current",
+  "name": "@red-cup-engineering/koios-news-authority-ceremony-engine",
   "version": "0.1.0",
   "type": "module",
   "description": "Offline, verifier-backed preparation of Koios authority artifacts without private-key handling.",
@@ -25,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/causeway-services/authority-ceremony-current.git"
+    "url": "git+https://github.com/red-cup-engineering/koios-news-authority-ceremony-engine.git"
   },
   "license": "LicenseRef-561Group-1.0",
   "funding": {
