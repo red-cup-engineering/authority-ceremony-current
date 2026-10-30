@@ -13,15 +13,15 @@
     "./authority-ceremony": "./src/authority-ceremony.mjs"
   },
   "dependencies": {
-    "@causeway-services/cloudflare-release-current": "workspace:*",
-    "@red-cup-engineering/koios-news-editorial-publication-authority-engine": "workspace:*",
-    "@red-cup-engineering/cryptographic-computer-data-engineering-services-section": "workspace:*",
-    "@red-cup-engineering/javascript-node-services-section": "workspace:*",
-    "@red-cup-engineering/json-services-section": "workspace:*"
+    "@red-cup-engineering/koios-news-editorial-publication-authority-engine": "0.2.1",
+    "@red-cup-engineering/cryptographic-computer-data-engineering-services-section": "0.3.2",
+    "@red-cup-engineering/javascript-node-services-section": "0.4.2",
+    "@red-cup-engineering/json-services-section": "0.4.1",
+    "@red-cup-engineering/koios-news-cloudflare-release-engine": "0.1.0"
   },
   "scripts": {
     "check": "node --check src/authority-ceremony.mjs && node --check bin/koios-news-authority-ceremony.mjs",
-    "test": "node --test test/*.test.mjs"
+    "test": "SECTION_DATA_ROOT=test/fixtures node --test test/*.test.mjs"
   },
   "repository": {
     "type": "git",

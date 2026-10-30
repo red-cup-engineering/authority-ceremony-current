@@ -16,7 +16,7 @@ import {
 import {
   verifyBinding,
   verifyRollback,
-} from "@causeway-services/cloudflare-release-current/carrier";
+} from "@red-cup-engineering/koios-news-cloudflare-release-engine/carrier";
 
 const usage = `Usage:
   koios-news-authority-ceremony editorial-template --draft FILE --slug SLUG --grant-id ID --issuer-key-id ID --issued-at UTC --expires-at UTC --out FILE

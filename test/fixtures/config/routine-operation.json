@@ -1,0 +1,10 @@
+{
+  "contract": "koios-news/routine-operation/v1",
+  "jobEnvironment": "KOIOS_NEWS_ROUTINE_PUBLICATION_JOB",
+  "queueEnvironment": "KOIOS_NEWS_ROUTINE_PUBLICATION_QUEUE",
+  "authorityKeysEnvironment": "KOIOS_NEWS_ROUTINE_PUBLICATION_AUTHORITY_KEYS",
+  "assessmentKeysEnvironment": "KOIOS_NEWS_ROUTINE_PUBLICATION_ASSESSMENT_KEYS",
+  "outputRootEnvironment": "KOIOS_NEWS_ROUTINE_PUBLICATION_OUTPUT_ROOT",
+  "replayRootEnvironment": "KOIOS_NEWS_ROUTINE_PUBLICATION_REPLAY_ROOT",
+  "propertyEnvironment": "KOIOS_NEWS_PROPERTY"
+}

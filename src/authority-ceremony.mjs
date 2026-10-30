@@ -16,7 +16,7 @@ import {
   verifyCandidate,
   verifyGrant,
   verifyProductionBaseline,
-} from "@causeway-services/cloudflare-release-current/carrier";
+} from "@red-cup-engineering/koios-news-cloudflare-release-engine/carrier";
 import { sha256Digest, sha256Hex } from "@red-cup-engineering/cryptographic-computer-data-engineering-services-section/integrity";
 
 const EDITORIAL_KIND = "koios.news.editorial-publication-grant/v1";
@@ -369,7 +369,7 @@ export function formCloudflareGrant(
   return Object.freeze(unsigned);
 }
 /**
- * Form the local rollback binding consumed by cloudflare-release-current.
+ * Form the local rollback binding consumed by koios-news-cloudflare-release-engine.
  * It does not contact Cloudflare, inspect credentials, sign, or execute a rollback.
  */
 export function formCloudflareRollbackBinding({ bindingPath, priorVersionId }) {
@@ -476,7 +476,9 @@ function routineEnvironmentNames() {
   try {
     config = JSON.parse(
       readFileSync(
-        new URL("../../../config/routine-operation.json", import.meta.url),
+        // The routine-operation contract is the koios.news site's: its data root (SECTION_DATA_ROOT, default the
+        // working directory, where the site runs this tool) holds config/routine-operation.json.
+        resolve(process.env.SECTION_DATA_ROOT ?? process.cwd(), "config/routine-operation.json"),
         "utf8",
       ),
     );
