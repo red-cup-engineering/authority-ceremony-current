@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@causeway-services/cloudflare-release-current": "workspace:*",
-    "@causeway-services/editorial-publication-authority": "workspace:*",
+    "@red-cup-engineering/koios-news-editorial-publication-authority-engine": "workspace:*",
     "@red-cup-engineering/cryptographic-computer-data-engineering-services-section": "workspace:*",
     "@red-cup-engineering/javascript-node-services-section": "workspace:*",
     "@red-cup-engineering/json-services-section": "workspace:*"

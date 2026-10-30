@@ -8,7 +8,7 @@ import {
   writeFileSync,
 } from "node:fs";
 import { dirname, resolve } from "node:path";
-import { verifyPublicationAuthority } from "@causeway-services/editorial-publication-authority";
+import { verifyPublicationAuthority } from "@red-cup-engineering/koios-news-editorial-publication-authority-engine";
 import { canonicalJson } from "@red-cup-engineering/json-services-section/canonical-json";
 import {
   TARGET,
