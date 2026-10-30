@@ -7,7 +7,7 @@
 [![Tips welcome](https://img.shields.io/badge/tips-welcome-d4a017)](https://github.com/561-group/.github/blob/main/TIPS.md)
 <!-- 561-group-standards:badges:end -->
 
-This offline tool prepares authority artifacts but never creates, imports, or
+This offline app of computer-koios-news-media-systems-engineering-services-section prepares authority artifacts but never creates, imports, or
 prints a private key. It never decides that a manuscript is publishable, edits
 a draft, writes the runtime environment, invokes a scheduler, contacts
 Cloudflare, or runs Wrangler.
