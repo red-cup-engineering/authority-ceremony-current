@@ -10,7 +10,7 @@ import {
 } from "node:fs";
 import { join } from "node:path";
 import test from "node:test";
-import { TARGET } from "@causeway-services/cloudflare-release-current/carrier";
+import { TARGET } from "@red-cup-engineering/koios-news-cloudflare-release-engine/carrier";
 import {
   attachExternalSignature,
   formCloudflareGrant,
@@ -26,7 +26,7 @@ import {
 import {
   verifyBinding,
   verifyRollback,
-} from "@causeway-services/cloudflare-release-current/carrier";
+} from "@red-cup-engineering/koios-news-cloudflare-release-engine/carrier";
 
 const sha = (bytes) => createHash("sha256").update(bytes).digest("hex");
 const canonical = (value) => {
